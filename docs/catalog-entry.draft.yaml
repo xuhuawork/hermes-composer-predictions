@@ -1,0 +1,26 @@
+# Draft only: copy to plugin-catalog/conversation-guidance.yaml after approval.
+# No public repository has been created. Replace OWNER, maintainer, and repo
+# with the approved public repository identity before submission.
+# Replace sha with the FINAL PUBLIC commit's full 40-hex SHA (not a tag,
+# branch, short SHA, or the all-zero placeholder below). Validate that checkout.
+name: composer-predictions
+title: Hermes Composer Predictions
+repo: https://github.com/xuhuawork/hermes-composer-predictions
+sha: "0000000000000000000000000000000000000000"
+description: Three context-aware next-step prompts; editable drafts, never auto-send.
+maintainer: xuhuawork
+tier: community
+category: desktop
+requires_hermes: ">=0.23.0"
+version: "0.1.0"
+readme: true
+platforms: []
+screenshots: [] # Add real, privacy-reviewed UI screenshots pinned to the final SHA.
+known_issues:
+  - Native gray preview and Tab / ArrowRight / Escape require Hermes Desktop with PR 151206.
+  - Without getDraft, clicking a chip directly replaces the editable draft.
+capabilities:
+  provides_tools: []
+  provides_hooks: []
+  provides_middleware: []
+  requires_env: []

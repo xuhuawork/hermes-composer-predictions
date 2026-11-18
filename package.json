@@ -1,0 +1,24 @@
+{
+  "name": "hermes-composer-predictions",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Context-aware next-step prompts for Hermes Desktop. Click to edit, never auto-send.",
+  "repository": "https://github.com/xuhuawork/hermes-composer-predictions",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "test": "node --test",
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/build.mjs --check && node --check plugin.js && node --check desktop/plugin.js && node --check scripts/install.mjs && npm test",
+    "install:plugin": "node scripts/install.mjs",
+    "uninstall:plugin": "node scripts/install.mjs --uninstall"
+  },
+  "files": ["plugin.yaml", "plugin.js", "desktop/plugin.js", "scripts/build.mjs", "scripts/install.mjs", "README.md", "README.zh-CN.md", "LICENSE", "docs/"],
+  "devDependencies": {
+    "esbuild": "0.28.1",
+    "jsdom": "29.1.1",
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
+  }
+}
